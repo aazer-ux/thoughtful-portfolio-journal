@@ -153,3 +153,55 @@
     color: var(--color-foreground);
   }
 }
+
+/* site-import tokens: begin (generated; re-import replaces this block) */
+/* Imported clone roles use prefixed Tailwind utilities
+   (bg-site-import-primary, text-site-import-foreground, …); edit the
+   --site-import-* variables to restyle the clone. Unprefixed roles theme new UI. */
+:root {
+  --background: oklch(0.12476 0.02239 269.71);
+  --site-import-background: oklch(0.12476 0.02239 269.71);
+  --foreground: oklch(0.96731 0.01532 269.99);
+  --site-import-foreground: oklch(0.96731 0.01532 269.99);
+  --primary: oklch(0.77209 0.09756 82.03);
+  --site-import-primary: oklch(0.77209 0.09756 82.03);
+  --primary-foreground: oklch(0.145 0 0);
+  --site-import-primary-foreground: oklch(0.145 0 0);
+  --accent: oklch(0.77209 0.09756 82.03 / 0.3);
+  --site-import-accent: oklch(0.77209 0.09756 82.03 / 0.3);
+  --border: oklch(1 0 0 / 0.08);
+  --site-import-border: oklch(1 0 0 / 0.08);
+}
+/* Design tokens captured from the imported site, registered as Tailwind
+   utilities (bg-<name>, text-<name>, font-<name>). var() values live in
+   the imported stylesheet's :root. */
+@theme inline {
+  --font-sans: "DM Sans", sans-serif;
+  --color-site-import-background: var(--site-import-background);
+  --color-site-import-foreground: var(--site-import-foreground);
+  --color-site-import-primary: var(--site-import-primary);
+  --color-site-import-primary-foreground: var(--site-import-primary-foreground);
+  --color-site-import-accent: var(--site-import-accent);
+  --color-site-import-border: var(--site-import-border);
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-blue: var(--blue);
+  --color-blue-light: var(--blue-light);
+  --color-border: var(--border);
+  --color-glow-blue: var(--glow-blue);
+  --color-glow-gold: var(--glow-gold);
+  --color-glow-violet: var(--glow-violet);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface2);
+  --color-text: var(--text);
+  --color-violet: var(--violet);
+  --color-violet-light: var(--violet-light);
+}
+@theme reference {
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+/* site-import tokens: end */

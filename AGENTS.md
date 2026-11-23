@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Imported portfolio
+- Keep imported page markup and interactive React state in its route file, and retain captured CSS separately; this preserves source selectors and visual fidelity.

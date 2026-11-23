@@ -1,0 +1,494 @@
+[
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Passer",
+    "expected": "intro dismissed",
+    "observed": true,
+    "status": "pass",
+    "site": "source"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "langBtn",
+    "expected": "language/theme changes",
+    "observed": "source observed",
+    "site": "source",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes",
+    "observed": "source observed",
+    "site": "source",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel hero",
+    "scroll": 80,
+    "expected": "section visible",
+    "observed": {
+      "top": -80,
+      "height": 1800,
+      "text": "IUT\nDouala, Cameroun\n3\nProjets live\nDISPONIBLE POUR DES OPPORTUNIT\u00c9S\nArthur\n\nDJATCHEU\nDev Junior \u00b7 G\u00e9nie Informatique\nD\u00e9veloppeur Web Junior...\n\n\"La s",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel about",
+    "scroll": 1416,
+    "expected": "section visible",
+    "observed": {
+      "top": 384,
+      "height": 1336,
+      "text": "3+\nPROJETS\n3\nLANGUES\n4\nTECHNOS\n\u221e\nAMBITION\nQUI SUIS-JE\n\u00c0 propos\n\nJe suis Arthur DJATCHEU, \u00e9tudiant en G\u00e9nie Informatique \u00e0 l'IUT de Douala, Cameroun. P",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel skills",
+    "scroll": 2693,
+    "expected": "section visible",
+    "observed": {
+      "top": 443.09375,
+      "height": 1277,
+      "text": "EXPERTISE\nComp\u00e9tences\n\u26a1\nComp\u00e9tences Techniques\nHTML\n90%\nCSS\n65%\nJavaScript\n60%\nPython\n60%\n\ud83e\udde0\nSoft Skills\nCr\u00e9ativit\u00e9 & Innovation\nGestion de Projet\nTra",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel formation",
+    "scroll": 3618,
+    "expected": "section visible",
+    "observed": {
+      "top": 795.046875,
+      "height": 925,
+      "text": "PARCOURS ACAD\u00c9MIQUE\nFormation\nEN COURS \u00b7 2026 \u2014 PR\u00c9SENT\nIUT de Douala\nG\u00e9nie Informatique \u00b7 Douala, Cameroun. Formation en d\u00e9veloppement logiciel, algo",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel projects",
+    "scroll": 5176,
+    "expected": "section visible",
+    "observed": {
+      "top": 162.34375,
+      "height": 1557,
+      "text": "MES R\u00c9ALISATIONS\nProjets\nNURU\nnuru-ashy.vercel.app\n01 \u2014 2024\nNURU\nPlateforme de d\u00e9couverte d\u00e9di\u00e9e aux g\u00e9nies tech africains. NURU met en lumi\u00e8re les t",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel contact",
+    "scroll": 6100,
+    "expected": "section visible",
+    "observed": {
+      "top": 795.65625,
+      "height": 924,
+      "text": "TRAVAILLONS ENSEMBLE\n Contact\nDiscutons de votre projet\n\nJe suis ouvert \u00e0 toute opportunit\u00e9 : stage, projet freelance, collaboration ou simplement \u00e9ch",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-desktop-contact.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Passer",
+    "expected": "intro dismissed",
+    "observed": true,
+    "status": "pass",
+    "site": "source"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "langBtn",
+    "expected": "language/theme changes",
+    "observed": "source observed",
+    "site": "source",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes",
+    "observed": "source observed",
+    "site": "source",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel hero",
+    "scroll": 157,
+    "expected": "section visible",
+    "observed": {
+      "top": -157,
+      "height": 921,
+      "text": "IUT\nDouala, Cameroun\n3\nProjets live\nDISPONIBLE POUR DES OPPORTUNIT\u00c9S\nArthur\n\nDJATCHEU\nDev Junior \u00b7 G\u00e9nie Informatique\nD\u00e9veloppeur Web Junior..\n\n\"La su",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-phone-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel about",
+    "scroll": 1001,
+    "expected": "section visible",
+    "observed": {
+      "top": -79.84375,
+      "height": 1927,
+      "text": "3+\nPROJETS\n3\nLANGUES\n4\nTECHNOS\n\u221e\nAMBITION\nQUI SUIS-JE\n\u00c0 propos\n\nJe suis Arthur DJATCHEU, \u00e9tudiant en G\u00e9nie Informatique \u00e0 l'IUT de Douala, Cameroun. P",
+      "hidden": 1
+    },
+    "site": "source",
+    "status": "failed",
+    "screenshot": "/tmp/browser/portfolio/source-phone-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel skills",
+    "scroll": 3494,
+    "expected": "section visible",
+    "observed": {
+      "top": -646.109375,
+      "height": 1976,
+      "text": "EXPERTISE\nComp\u00e9tences\n\u26a1\nComp\u00e9tences Techniques\nHTML\n90%\nCSS\n65%\nJavaScript\n60%\nPython\n60%\n\ud83e\udde0\nSoft Skills\nCr\u00e9ativit\u00e9 & Innovation\nGestion de Projet\nTra",
+      "hidden": 3
+    },
+    "site": "source",
+    "status": "failed",
+    "screenshot": "/tmp/browser/portfolio/source-phone-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel formation",
+    "scroll": 5110,
+    "expected": "section visible",
+    "observed": {
+      "top": -286.09375,
+      "height": 1256,
+      "text": "PARCOURS ACAD\u00c9MIQUE\nFormation\nEN COURS \u00b7 2026 \u2014 PR\u00c9SENT\nIUT de Douala\nG\u00e9nie Informatique \u00b7 Douala, Cameroun. Formation en d\u00e9veloppement logiciel, algo",
+      "hidden": 0
+    },
+    "site": "source",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/source-phone-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel projects",
+    "scroll": 6888,
+    "expected": "section visible",
+    "observed": {
+      "top": -808.59375,
+      "height": 2300,
+      "text": "MES R\u00c9ALISATIONS\nProjets\nNURU\nnuru-ashy.vercel.app\n01 \u2014 2024\nNURU\nPlateforme de d\u00e9couverte d\u00e9di\u00e9e aux g\u00e9nies tech africains. NURU met en lumi\u00e8re les t",
+      "hidden": 2
+    },
+    "site": "source",
+    "status": "failed",
+    "screenshot": "/tmp/browser/portfolio/source-phone-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel contact",
+    "scroll": 8741,
+    "expected": "section visible",
+    "observed": {
+      "top": -361.40625,
+      "height": 1406,
+      "text": "TRAVAILLONS ENSEMBLE\n Contact\nDiscutons de votre projet\n\nJe suis ouvert \u00e0 toute opportunit\u00e9 : stage, projet freelance, collaboration ou simplement \u00e9ch",
+      "hidden": 1
+    },
+    "site": "source",
+    "status": "failed",
+    "screenshot": "/tmp/browser/portfolio/source-phone-contact.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Passer",
+    "expected": "intro dismissed",
+    "observed": true,
+    "status": "pass",
+    "site": "preview"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "langBtn",
+    "expected": "language/theme changes",
+    "observed": "not checked",
+    "site": "preview",
+    "status": "blocked"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes",
+    "observed": "not checked",
+    "site": "preview",
+    "status": "blocked"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel hero",
+    "scroll": 80,
+    "expected": "section visible",
+    "observed": {
+      "top": -80,
+      "height": 1800,
+      "text": "IUT\nDouala, Cameroun\n3\nProjets live\nDISPONIBLE POUR DES OPPORTUNIT\u00c9S\nArthur\n\nDJATCHEU\nDev Junior \u00b7 G\u00e9nie Informatique\nD\u00e9veloppeur Web Junior...\n\n\"La s",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel about",
+    "scroll": 1416,
+    "expected": "section visible",
+    "observed": {
+      "top": 384,
+      "height": 1336,
+      "text": "3+\nPROJETS\n3\nLANGUES\n4\nTECHNOS\n\u221e\nAMBITION\nQUI SUIS-JE\n\u00c0 propos\n\nJe suis Arthur DJATCHEU, \u00e9tudiant en G\u00e9nie Informatique \u00e0 l'IUT de Douala, Cameroun. P",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel skills",
+    "scroll": 2693,
+    "expected": "section visible",
+    "observed": {
+      "top": 443.09375,
+      "height": 1277,
+      "text": "EXPERTISE\nComp\u00e9tences\n\u26a1\nComp\u00e9tences Techniques\nHTML\n90%\nCSS\n65%\nJavaScript\n60%\nPython\n60%\n\ud83e\udde0\nSoft Skills\nCr\u00e9ativit\u00e9 & Innovation\nGestion de Projet\nTra",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel formation",
+    "scroll": 3618,
+    "expected": "section visible",
+    "observed": {
+      "top": 795.046875,
+      "height": 925,
+      "text": "PARCOURS ACAD\u00c9MIQUE\nFormation\nEN COURS \u00b7 2026 \u2014 PR\u00c9SENT\nIUT de Douala\nG\u00e9nie Informatique \u00b7 Douala, Cameroun\nFormation en d\u00e9veloppement logiciel, algor",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel projects",
+    "scroll": 5176,
+    "expected": "section visible",
+    "observed": {
+      "top": 162.34375,
+      "height": 1557,
+      "text": "MES R\u00c9ALISATIONS\nProjets\nNURU\nnuru-ashy.vercel.app\n01 \u2014 2024\nNURU\nPlateforme de d\u00e9couverte d\u00e9di\u00e9e aux g\u00e9nies tech africains. NURU met en lumi\u00e8re les t",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel contact",
+    "scroll": 6100,
+    "expected": "section visible",
+    "observed": {
+      "top": 795.65625,
+      "height": 924,
+      "text": "TRAVAILLONS ENSEMBLE\nContact\nDiscutons de votre projet\n\nJe suis ouvert \u00e0 toute opportunit\u00e9 : stage, projet freelance, collaboration ou simplement \u00e9cha",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-desktop-contact.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Passer",
+    "expected": "intro dismissed",
+    "observed": true,
+    "status": "pass",
+    "site": "preview"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "langBtn",
+    "expected": "language/theme changes",
+    "observed": "not checked",
+    "site": "preview",
+    "status": "blocked"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes",
+    "observed": "not checked",
+    "site": "preview",
+    "status": "blocked"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel hero",
+    "scroll": 119,
+    "expected": "section visible",
+    "observed": {
+      "top": -119,
+      "height": 921,
+      "text": "IUT\nDouala, Cameroun\n3\nProjets live\nDISPONIBLE POUR DES OPPORTUNIT\u00c9S\nArthur\n\nDJATCHEU\nDev Junior \u00b7 G\u00e9nie Informatique\nD\u00e9veloppeur Web Junior...\n\n\"La s",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel about",
+    "scroll": 1001,
+    "expected": "section visible",
+    "observed": {
+      "top": -79.84375,
+      "height": 1927,
+      "text": "3+\nPROJETS\n3\nLANGUES\n4\nTECHNOS\n\u221e\nAMBITION\nQUI SUIS-JE\n\u00c0 propos\n\nJe suis Arthur DJATCHEU, \u00e9tudiant en G\u00e9nie Informatique \u00e0 l'IUT de Douala, Cameroun. P",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel skills",
+    "scroll": 3472,
+    "expected": "section visible",
+    "observed": {
+      "top": -624.109375,
+      "height": 1933,
+      "text": "EXPERTISE\nComp\u00e9tences\n\u26a1\nComp\u00e9tences Techniques\nHTML\n90%\nCSS\n65%\nJavaScript\n60%\nPython\n60%\n\ud83e\udde0\nSoft Skills\nCr\u00e9ativit\u00e9 & Innovation\nGestion de Projet\nTra",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel formation",
+    "scroll": 5066,
+    "expected": "section visible",
+    "observed": {
+      "top": -285.59375,
+      "height": 1256,
+      "text": "PARCOURS ACAD\u00c9MIQUE\nFormation\nEN COURS \u00b7 2026 \u2014 PR\u00c9SENT\nIUT de Douala\nG\u00e9nie Informatique \u00b7 Douala, Cameroun\nFormation en d\u00e9veloppement logiciel, algor",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel projects",
+    "scroll": 6844,
+    "expected": "section visible",
+    "observed": {
+      "top": -808.09375,
+      "height": 2300,
+      "text": "MES R\u00c9ALISATIONS\nProjets\nNURU\nnuru-ashy.vercel.app\n01 \u2014 2024\nNURU\nPlateforme de d\u00e9couverte d\u00e9di\u00e9e aux g\u00e9nies tech africains. NURU met en lumi\u00e8re les t",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel contact",
+    "scroll": 8697,
+    "expected": "section visible",
+    "observed": {
+      "top": -360.90625,
+      "height": 1406,
+      "text": "TRAVAILLONS ENSEMBLE\nContact\nDiscutons de votre projet\n\nJe suis ouvert \u00e0 toute opportunit\u00e9 : stage, projet freelance, collaboration ou simplement \u00e9cha",
+      "hidden": 0
+    },
+    "site": "preview",
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/preview-phone-contact.png"
+  }
+]

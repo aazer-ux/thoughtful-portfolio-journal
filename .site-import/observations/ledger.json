@@ -1,0 +1,432 @@
+[
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "loaded entry button",
+    "expected": "portfolio displayed",
+    "observed": "intro hidden",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "langBtn",
+    "expected": "language/theme changes and returns",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes and returns",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "navigation about",
+    "expected": "#about",
+    "observed": "http://localhost:8080/#about",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "navigation skills",
+    "expected": "#skills",
+    "observed": "http://localhost:8080/#skills",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "navigation formation",
+    "expected": "#formation",
+    "observed": "http://localhost:8080/#formation",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "navigation projects",
+    "expected": "#projects",
+    "observed": "http://localhost:8080/#projects",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "navigation contact",
+    "expected": "#contact",
+    "observed": "http://localhost:8080/#contact",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "hero projects",
+    "expected": "#projects",
+    "observed": "http://localhost:8080/#projects",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "hero contact",
+    "expected": "#contact",
+    "observed": "http://localhost:8080/#contact",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel hero",
+    "scroll_position": 40,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/14f6a4a1bfcfda80.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel about",
+    "scroll_position": 1760,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/932656ab287c6dad.jpg",
+        "ready": true
+      },
+      {
+        "src": "/site-assets/3535329b5108315f.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel skills",
+    "scroll_position": 3096,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel formation",
+    "scroll_position": 4373,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel projects",
+    "scroll_position": 5298,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel contact",
+    "scroll_position": 6137,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/57975f7faa20e0bb.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-desktop-contact.png"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Voir le certificat\n✅ Obtenu — 11 juin 2026",
+    "expected": "original destination",
+    "observed": "https://freecodecamp.org/certification/aazer/responsive-web-design-v9",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://nuru-ashy.vercel.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://maelle-beauty-glow.lovable.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://viny-natural-juice.vercel.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "✉️\ndjatcheuarthur4@gmail.com",
+    "expected": "original destination",
+    "observed": "mailto:djatcheuarthur4@gmail.com",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "💬\n+237 672 931 105",
+    "expected": "original destination",
+    "observed": "https://wa.me/237672931105",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "🔗\nLinkedIn — Arthur DJATCHEU",
+    "expected": "original destination",
+    "observed": "https://www.linkedin.com/in/arthur-djatcheu-7397833a4",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "contact form valid submission",
+    "expected": "source confirmation only",
+    "observed": "confirmation displayed; no email service exists in source",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "loaded entry button",
+    "expected": "portfolio displayed",
+    "observed": "intro hidden",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "langBtn",
+    "expected": "language/theme changes and returns",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "themeBtn",
+    "expected": "language/theme changes and returns",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "menu link",
+    "expected": "open menu and close/navigation",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "menu escape",
+    "expected": "open menu and close/navigation",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "menu toggle",
+    "expected": "open menu and close/navigation",
+    "observed": "verified",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "hero projects",
+    "expected": "#projects",
+    "observed": "http://localhost:8080/#projects",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "hero contact",
+    "expected": "#contact",
+    "observed": "http://localhost:8080/#contact",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel hero",
+    "scroll_position": 49,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/14f6a4a1bfcfda80.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-hero.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel about",
+    "scroll_position": 881,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/932656ab287c6dad.jpg",
+        "ready": true
+      },
+      {
+        "src": "/site-assets/3535329b5108315f.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-about.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel skills",
+    "scroll_position": 2808,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-skills.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel formation",
+    "scroll_position": 4784,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-formation.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel projects",
+    "scroll_position": 6039,
+    "expected": "text and source images visible",
+    "observed": [],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-projects.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel contact",
+    "scroll_position": 8340,
+    "expected": "text and source images visible",
+    "observed": [
+      {
+        "src": "/site-assets/57975f7faa20e0bb.jpg",
+        "ready": true
+      }
+    ],
+    "status": "pass",
+    "screenshot": "/tmp/browser/portfolio/final-phone-contact.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Voir le certificat\n✅ Obtenu — 11 juin 2026",
+    "expected": "original destination",
+    "observed": "https://freecodecamp.org/certification/aazer/responsive-web-design-v9",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://nuru-ashy.vercel.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://maelle-beauty-glow.lovable.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Voir le projet →",
+    "expected": "original destination",
+    "observed": "https://viny-natural-juice.vercel.app/",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "✉️\ndjatcheuarthur4@gmail.com",
+    "expected": "original destination",
+    "observed": "mailto:djatcheuarthur4@gmail.com",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "💬\n+237 672 931 105",
+    "expected": "original destination",
+    "observed": "https://wa.me/237672931105",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "🔗\nLinkedIn — Arthur DJATCHEU",
+    "expected": "original destination",
+    "observed": "https://www.linkedin.com/in/arthur-djatcheu-7397833a4",
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "contact form valid submission",
+    "expected": "source confirmation only",
+    "observed": "confirmation displayed; no email service exists in source",
+    "status": "pass"
+  }
+]
