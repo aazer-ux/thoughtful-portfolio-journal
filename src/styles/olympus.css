@@ -1,0 +1,159 @@
+.olympus{--night:oklch(0.13 0.04 265);--deep:oklch(0.18 0.06 268);--gold:oklch(0.82 0.12 82);--gold2:oklch(0.9 0.09 90);--cyan:oklch(0.78 0.14 225);--ink:oklch(0.95 0.02 260);--dim:oklch(0.72 0.03 260);--line:oklch(0.82 0.12 82 / .22);
+  position:relative;min-height:100vh;background:radial-gradient(ellipse at 70% -10%,oklch(0.3 0.12 270/.6),transparent 60%),radial-gradient(ellipse at 0% 100%,oklch(0.35 0.12 225/.35),transparent 55%),var(--night);color:var(--ink);font-family:"Cormorant Garamond",serif;font-size:19px;overflow-x:hidden}
+.olympus *{box-sizing:border-box}
+html{scroll-behavior:smooth}
+.starfield{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.mono{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.cta{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.7rem;border-radius:999px;border:0;cursor:pointer;font:600 .85rem "Cinzel",serif;letter-spacing:.12em;color:var(--night);background:linear-gradient(120deg,var(--gold),var(--gold2),var(--gold));background-size:200%;box-shadow:0 0 40px oklch(0.82 0.12 82/.45);text-decoration:none;transition:.4s;animation:shine 4s linear infinite}
+.cta:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 70px oklch(0.82 0.12 82/.7)}
+@keyframes shine{to{background-position:200%}}
+.ghost-btn{padding:.8rem 1.4rem;border-radius:999px;border:1px solid var(--line);background:oklch(1 0 0/.04);color:var(--ink);font:600 .78rem "Cinzel",serif;letter-spacing:.12em;cursor:pointer;text-decoration:none;backdrop-filter:blur(8px);transition:.3s}
+.ghost-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* intro */
+.intro{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.2rem;background:radial-gradient(circle at 50% 45%,oklch(0.22 0.09 268),oklch(0.08 0.03 265) 75%)}
+.intro-top{position:absolute;top:1.2rem;left:1.5rem;right:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.intro-hint{font-style:italic;color:var(--dim);text-align:center;max-width:36rem;margin:3rem 0 0}.intro-hint b{color:var(--gold);font-style:normal}
+.sky{width:min(100%,980px);height:auto;max-height:62vh;overflow:visible}
+.edge{stroke:oklch(1 0 0/.1);stroke-width:1.2;stroke-dasharray:4 6;transition:.6s}
+.edge.on{stroke:var(--gold);stroke-width:2;stroke-dasharray:none;filter:drop-shadow(0 0 6px var(--gold))}
+.star{cursor:pointer;outline:none}
+.star .core{fill:oklch(0.85 0.03 260/.55);transition:.4s}
+.star .halo{opacity:.15;transition:.5s;transform-box:fill-box;transform-origin:center}
+.star.on .core{fill:oklch(0.99 0.02 90)}.star.on .halo{opacity:1;animation:twinkle 2.5s ease-in-out infinite}
+.star.next .halo{opacity:.7;animation:pulse 1.3s ease-in-out infinite}
+.star:hover .halo,.star:focus .halo{opacity:.8}
+.star-label{fill:var(--gold);font:600 13px "Cinzel",serif;letter-spacing:.1em;pointer-events:none}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.2}}@keyframes twinkle{50%{transform:scale(.8)}}
+.water{fill:none;stroke:var(--cyan);stroke-width:2;stroke-dasharray:6 8;filter:drop-shadow(0 0 8px var(--cyan));animation:flow 1.5s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.star-card{position:absolute;bottom:7rem;max-width:26rem;padding:1rem 1.3rem;border:1px solid var(--line);border-radius:14px;background:oklch(0.15 0.05 265/.85);backdrop-filter:blur(10px);animation:up .5s}
+.star-card h4{margin:0 0 .3rem;font:600 1rem "Cinzel",serif;color:var(--gold)}.star-card p{margin:0;font-size:1rem;color:var(--dim)}
+.intro-bottom{min-height:9rem;display:flex;align-items:center}
+.reveal-name{text-align:center}
+.reveal-name h1{font:900 clamp(2rem,6vw,4.8rem) "Cinzel Decorative",serif;margin:0 0 .6rem;letter-spacing:.06em;background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.reveal-name h1 span{display:inline-block;opacity:0;animation:letter .7s forwards}
+.reveal-name .mono{display:block;margin-bottom:1.4rem;opacity:0;animation:up 1s 1s forwards}
+.reveal-name .cta{opacity:0;animation:up 1s 1.4s forwards}
+.intro.is-done .sky{animation:shrink 1.2s forwards}
+@keyframes shrink{to{transform:scale(.8) translateY(-20px)}}
+@keyframes letter{from{opacity:0;transform:translateY(30px) rotateX(90deg);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:linear-gradient(oklch(0.1 0.03 265/.85),transparent);backdrop-filter:blur(6px)}
+.logo{font:800 1.1rem "Cinzel",serif;color:var(--gold);text-decoration:none;letter-spacing:.15em}
+.nav nav{display:flex;gap:2rem}.nav nav a{font:600 .75rem "Cinzel",serif;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:.3s}
+.nav nav a:hover,.nav nav a.cur{color:var(--gold)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--gold);font-size:1.2rem;width:44px;height:44px;cursor:pointer}
+
+main{position:relative;z-index:1}
+.sec{max-width:1180px;margin:0 auto;padding:7rem 1.5rem 3rem}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+
+/* hero */
+.hero{min-height:100vh;max-width:1240px;margin:0 auto;padding:7rem 1.5rem 3rem;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.title{font:900 clamp(3.2rem,8vw,7rem)/0.95 "Cinzel Decorative",serif;margin:1rem 0;letter-spacing:.02em}
+.title em{font-style:normal;background:linear-gradient(110deg,var(--gold2),var(--gold) 40%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:600 1.1rem "Cinzel",serif;letter-spacing:.08em;margin:0}.role span{color:var(--gold)}
+.lead{font-size:1.3rem;color:var(--dim);max-width:34rem}
+.row{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0}
+blockquote{margin:0;border-left:2px solid var(--gold);padding-left:1rem;font-style:italic;color:var(--dim)}
+.hero-visual{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.arch{width:62%;aspect-ratio:3/4;border-radius:999px 999px 18px 18px;overflow:hidden;border:2px solid var(--gold);box-shadow:0 0 80px oklch(0.82 0.12 82/.35),inset 0 0 0 8px oklch(0.13 0.04 265);position:relative;z-index:2;animation:float 6s ease-in-out infinite}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.orbit{position:absolute;border:1px solid var(--line);border-radius:50%;animation:spin 30s linear infinite}
+.o1{inset:4%}.o2{inset:14%;border-style:dashed;animation-duration:50s;animation-direction:reverse}.o3{inset:-4%;border-color:oklch(0.78 0.14 225/.25);animation-duration:18s}
+.o3 span{position:absolute;top:-14px;left:50%;color:var(--cyan);font-size:1.5rem}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-14px)}}
+.badge{position:absolute;z-index:3;padding:.7rem 1rem;border:1px solid var(--line);border-radius:14px;background:oklch(0.15 0.05 265/.8);backdrop-filter:blur(10px);display:flex;flex-direction:column;animation:float 5s ease-in-out infinite}
+.badge b{font:800 1.3rem "Cinzel",serif;color:var(--gold)}.badge small{color:var(--dim);font-size:.85rem}
+.b1{left:0;top:22%}.b2{right:0;bottom:18%;animation-delay:-2s}
+
+.marquee{position:relative;z-index:1;overflow:hidden;border-block:1px solid var(--line);padding:1rem 0;background:oklch(0.82 0.12 82/.05)}
+.marquee div{white-space:nowrap;font:600 1rem "Cinzel",serif;letter-spacing:.3em;color:var(--gold);animation:mq 40s linear infinite;width:max-content}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.heading{text-align:center;margin-bottom:3.5rem}
+.heading h2{font:800 clamp(2.2rem,5vw,3.8rem) "Cinzel",serif;margin:.6rem 0}
+.meander{height:12px;width:220px;margin:0 auto;background:repeating-linear-gradient(90deg,var(--gold) 0 2px,transparent 2px 10px,var(--gold) 10px 12px,transparent 12px 20px);mask:linear-gradient(90deg,transparent,#000,transparent);opacity:.7}
+
+.mythos{display:grid;grid-template-columns:.8fr 1.2fr;gap:3.5rem;align-items:center}
+.mythos-img{position:relative;border-radius:200px 200px 20px 20px;overflow:hidden;border:1px solid var(--line)}
+.mythos-img img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;filter:saturate(1.05)}
+.mythos-img .mono{position:absolute;bottom:1rem;left:1rem;background:oklch(0.1 0.03 265/.7);padding:.4rem .7rem;border-radius:8px}
+.drop::first-letter{float:left;font:900 4rem/0.9 "Cinzel Decorative",serif;color:var(--gold);margin:.3rem .6rem 0 0}
+.mythos-text p{font-size:1.2rem;color:var(--dim)}.mythos-text b{color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0}
+.stats div{text-align:center;padding:1rem .5rem;border:1px solid var(--line);border-radius:14px}
+.stats b{display:block;font:800 1.8rem "Cinzel",serif;color:var(--gold)}.stats small{color:var(--dim)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips span{padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;font:400 .72rem "JetBrains Mono",monospace;color:var(--ink);background:oklch(1 0 0/.03)}
+
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:2rem}
+.skill{position:relative;text-align:center;padding:2rem 1rem;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,oklch(0.2 0.06 268/.6),oklch(0.14 0.04 265/.4));transition:transform .4s,border-color .4s}
+.skill:hover{transform:translateY(-8px);border-color:var(--gold)}
+.skill svg{width:120px;transform:rotate(-90deg)}
+.track{fill:none;stroke:oklch(1 0 0/.08);stroke-width:6}.fill{fill:none;stroke:var(--gold);stroke-width:6;stroke-linecap:round;stroke-dasharray:327;transition:stroke-dashoffset 2s .3s;filter:drop-shadow(0 0 6px var(--gold))}
+.skill:not(.in) .fill{stroke-dashoffset:327!important}
+.skill-v{position:absolute;top:calc(2rem + 42px);left:0;right:0;font:800 1.4rem "Cinzel",serif}
+.skill h3{font:800 1.3rem "Cinzel",serif;margin:.8rem 0 .2rem}.skill small{color:var(--dim)}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{padding:1.6rem;border:1px solid var(--line);border-radius:20px;background:oklch(0.16 0.05 265/.6);backdrop-filter:blur(6px);color:var(--ink);text-decoration:none;transition:.4s}
+.card h4{font:600 1.05rem "Cinzel",serif;margin:0 0 1rem}.card p{color:var(--dim);margin:0}
+.trophy span{font-size:2rem}.trophy small{display:block;margin-top:.8rem;color:var(--gold);font-family:"Cinzel",serif}
+a.card:hover{border-color:var(--gold);transform:translateY(-6px)}
+
+.timeline{position:relative;max-width:760px;margin:0 auto 4rem;padding-left:2.5rem;border-left:1px solid var(--line)}
+.step{position:relative;margin-bottom:2.5rem}.step::before{content:"✦";position:absolute;left:-3.05rem;top:-.1rem;color:var(--gold);font-size:1.4rem;text-shadow:0 0 12px var(--gold)}
+.step h3{font:800 1.5rem "Cinzel",serif;margin:.4rem 0}.step p{color:var(--dim);margin:0}
+.sub{text-align:center;font:600 1.4rem "Cinzel",serif;margin-bottom:1.5rem}
+
+.projects{display:flex;flex-direction:column;gap:1.2rem}
+.project{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center;padding:2rem;border:1px solid var(--line);border-radius:22px;background:oklch(0.16 0.05 265/.55);color:var(--ink);text-decoration:none;overflow:hidden;transition:.5s}
+.project::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,oklch(0.82 0.12 82/.12),transparent 70%);transform:translateX(-100%);transition:.8s}
+.project:hover{border-color:var(--gold);transform:scale(1.015)}.project:hover::after{transform:translateX(100%)}
+.roman{font:900 3.5rem "Cinzel Decorative",serif;color:transparent;-webkit-text-stroke:1px var(--gold);min-width:5rem}
+.project h3{font:800 1.9rem "Cinzel",serif;margin:.3rem 0}.project p{color:var(--dim);margin:0 0 1rem}
+.go{font:600 .8rem "Cinzel",serif;color:var(--gold);letter-spacing:.1em;white-space:nowrap}
+
+.oracle{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.oracle-info{display:flex;flex-direction:column;gap:.9rem}
+.oracle-info p{font-size:1.25rem;color:var(--dim)}
+.oracle-info a{color:var(--ink);text-decoration:none;padding:.9rem 1.2rem;border:1px solid var(--line);border-radius:14px;transition:.3s;font-size:1.05rem}
+.oracle-info a:hover{border-color:var(--gold);color:var(--gold);transform:translateX(6px)}
+.astro{width:180px;border-radius:50%;aspect-ratio:1;object-fit:cover;border:2px solid var(--cyan);box-shadow:0 0 50px oklch(0.78 0.14 225/.4);animation:float 5s ease-in-out infinite}
+.form{display:flex;flex-direction:column;gap:1rem}
+.form label{display:flex;flex-direction:column;gap:.4rem;font:600 .72rem "Cinzel",serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.form input,.form textarea{font:400 1rem "Cormorant Garamond",serif;padding:.8rem 1rem;border-radius:12px;border:1px solid var(--line);background:oklch(0.1 0.03 265/.6);color:var(--ink);outline:none;transition:.3s}
+.form input:focus,.form textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px oklch(0.82 0.12 82/.15)}
+.form .cta{align-self:flex-start}.ok{color:var(--cyan)!important}
+
+.foot{position:relative;z-index:1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:2rem;border-top:1px solid var(--line);color:var(--dim);margin-top:4rem}
+
+/* guide */
+.guide{position:fixed;right:1.2rem;bottom:1.2rem;z-index:60;display:flex;align-items:flex-end;gap:.6rem}
+.bot{width:86px;height:86px;border-radius:50%;padding:0;border:2px solid var(--cyan);overflow:hidden;cursor:pointer;background:var(--night);box-shadow:0 0 30px oklch(0.78 0.14 225/.55);animation:float 3.5s ease-in-out infinite;flex-shrink:0}
+.bot img{width:100%;height:100%;object-fit:cover;transform:scale(1.5) translateY(4%)}
+.bubble{max-width:300px;padding:1rem 1.1rem;border:1px solid oklch(0.78 0.14 225/.4);border-radius:18px 18px 4px 18px;background:oklch(0.14 0.05 260/.92);backdrop-filter:blur(10px);animation:up .4s}
+.bubble-head{color:var(--cyan)}.bubble p{margin:.4rem 0 .8rem;font-size:1.02rem;min-height:3.5em}
+.caret{color:var(--cyan);animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.bubble-actions{display:flex;justify-content:space-between;gap:.5rem}
+.bubble-actions button{background:oklch(0.78 0.14 225/.15);border:1px solid oklch(0.78 0.14 225/.4);color:var(--ink);border-radius:999px;padding:.45rem .9rem;font:600 .7rem "Cinzel",serif;letter-spacing:.08em;cursor:pointer}
+.bubble-actions .x{padding:.45rem .7rem}
+
+@media (max-width:860px){
+  .olympus{font-size:17px}
+  .nav{padding:.8rem 1rem}.burger{display:block}
+  .nav nav{display:none;position:fixed;inset:64px 0 auto 0;flex-direction:column;gap:0;background:oklch(0.12 0.04 265/.97);border-bottom:1px solid var(--line)}
+  .nav nav.show{display:flex}.nav nav a{padding:1.1rem 1.5rem;border-top:1px solid var(--line)}
+  .hero,.mythos,.oracle{grid-template-columns:1fr}.hero{padding-top:6rem;gap:1rem}
+  .hero-visual{order:-1;max-width:380px;margin:0 auto;width:100%}
+  .skills{grid-template-columns:repeat(2,1fr)}.cards3{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .project{grid-template-columns:1fr;gap:.6rem}.roman{font-size:2.5rem}
+  .bubble{max-width:calc(100vw - 130px);font-size:.9rem}.bot{width:64px;height:64px}
+  .star-card{bottom:9rem;left:1rem;right:1rem}
+  .sky{max-height:52vh}
+}
+@media (prefers-reduced-motion:reduce){.olympus *{animation-duration:.01ms!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
