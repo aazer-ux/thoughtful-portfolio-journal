@@ -29,5 +29,5 @@ use the editor.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
 
-## Imported portfolio
-- Keep imported page markup and interactive React state in its route file, and retain captured CSS separately; this preserves source selectors and visual fidelity.
+## Portfolio
+- The portfolio page lives in src/routes/index.tsx with its styles in src/styles/olympus.css (linked via head); keeps the themed design self-contained.
