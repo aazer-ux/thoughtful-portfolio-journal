@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import olympusCss from "../styles/olympus.css?url";
 import portrait from "@/assets/arthur-portrait.jpg.asset.json";
@@ -213,7 +213,7 @@ function Index() {
     return () => { io.disconnect(); so.disconnect(); };
   }, [entered]);
 
-  const submit = (e: React.FormEvent<HTMLFormElement>) => {
+  const submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const body = `${f.get("message")}\n\n— ${f.get("name")} (${f.get("email")})`;
