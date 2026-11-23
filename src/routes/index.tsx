@@ -56,7 +56,7 @@ function Index() {
           </div>
           <div className={(loaded ? "loaded " : "") + "intro-loader-btn items-center rounded-[27px] flex h-[54px] justify-center pointer-events-auto relative [border:1px_solid_rgba(212,175,106,0.25)] [border-color:transparent]! [cursor:none] [font-family:var(--font-display)] [font-size:0.95rem] [font-weight:700] [letter-spacing:0.06em] [overflow:hidden] [transition:0.5s_cubic-bezier(0.25,0.46,0.45,0.94)]"} id="introBtn" role="button" tabIndex={loaded ? 0 : -1} aria-disabled={!loaded} onClick={() => loaded && setEntered(true)} onKeyDown={e => { if (loaded && (e.key === "Enter" || e.key === " ")) setEntered(true); }}>
             <div className="progress-fill absolute [animation:5s_linear_0s_1_normal_forwards_running_progress-fill-anim] [bottom:0px] [left:0px] [top:0px] [z-index:1]" style={{ width: "100%" }} id="progressFill" />
-            <span className="relative [transition:0.3s] [z-index:2]" id="introBtnText"><Translation fr={"Let's build the future"} en={"Let's build the future"} /></span>
+            <span className="relative [transition:0.3s] [z-index:2]" id="introBtnText">{loaded ? "Let's build the future" : "Chargement..."}</span>
           </div>
         </div>
       </div>
@@ -111,10 +111,10 @@ function ImportedSectionArthurDJATCHEU() {
         <div className="hero-visual items-center justify-center relative [animation:1.2s_ease_0.8s_1_normal_forwards_running_fade-in] [overflow:visible] [@media(max-width:1024px)]:justify-center" style={{ transform: "scale(1)", opacity: "1" }}>
           <div className="hero-photo-wrap relative">
             <div className="hero-photo-glow rounded-[40px] inset-[-20px] absolute [animation:4s_ease-in-out_0s_infinite_alternate_none_running_glow-pulse] [filter:blur(40px)] [z-index:1]" />
-            <div className={"\x72ing-1 rounded-[50%] absolute [animation:8s_linear_0s_infinite_normal_none_running_orbit] [animation-duration:12s]! [border:1px_solid] [border-color:rgba(124,58,237,0.3)]! [left:50%] [top:50%]"}>
+            <div className={"hero-photo-ring \x72ing-1 rounded-[50%] absolute [animation:8s_linear_0s_infinite_normal_none_running_orbit] [animation-duration:12s]! [border:1px_solid] [border-color:rgba(124,58,237,0.3)]! [left:50%] [top:50%]"}>
               <div className={"\x72ing-dot rounded-[50%] h-[8px] absolute [left:50%] [top:0px]"} />
             </div>
-            <div className={"\x72ing-2 rounded-[50%] absolute [animation:8s_linear_0s_infinite_normal_none_running_orbit] [animation-direction:reverse]! [animation-duration:18s]! [border:1px_solid] [border-color:rgba(37,99,235,0.2)]! [left:50%] [top:50%]"}>
+            <div className={"hero-photo-ring \x72ing-2 rounded-[50%] absolute [animation:8s_linear_0s_infinite_normal_none_running_orbit] [animation-direction:reverse]! [animation-duration:18s]! [border:1px_solid] [border-color:rgba(37,99,235,0.2)]! [left:50%] [top:50%]"}>
               <div className={"\x72ing-dot rounded-[50%] h-[8px] absolute [left:50%] [top:0px]"} style={{ background: "var(--blue-light)", boxShadow: "0 0 12px var(--blue-light)" }} />
             </div>
             <img className="hero-photo rounded-[30px] object-cover relative [filter:saturate(1.1)_contrast(1.05)] [height:100%] [object-position:center_top] [z-index:2]" src="/site-assets/14f6a4a1bfcfda80.jpg" alt="Arthur DJATCHEU" />
@@ -276,7 +276,7 @@ function ImportedSectionCompTences() {
             <div className="bento-icon [font-size:2rem]">⚡</div>
             <div className="bento-title [font-family:var(--font-display)] [font-size:1.1rem] [font-weight:700]"><Translation fr={"JavaScript"} en={"JavaScript"} /></div>
             <div className="bento-desc [line-height:1.6]">
-                Formation JavaScript en cours.
+                <Translation fr={"Formation JavaScript en cours. Maîtrise des bases, du DOM et des interactions utilisateur."} en={"JavaScript training in progress. Mastering the basics, DOM and user interactions."} />
               </div>
           </div>
           <div className={"bento-card reveal \x76isible [overflow:hidden]"} style={{ transitionDelay: "0.45s" }}>
@@ -387,10 +387,7 @@ function ImportedSectionProjets() {
             <div className="project-body">
               <div className="project-number uppercase [font-family:var(--font-mono)] [font-size:0.68rem] [letter-spacing:0.15em]">01 — 2024</div>
               <div className="project-title [font-family:var(--font-display)] [font-size:1.5rem] [font-weight:800]">NURU</div>
-              <div className="project-desc [font-size:0.88rem] [line-height:1.7]">
-                  Plateforme de découverte dédiée aux génies tech africains. NURU met en lumière les talents, innovateurs et
-                  visionnaires qui façonnent la technologie africaine.
-                </div>
+              <div className="project-desc [font-size:0.88rem] [line-height:1.7]"><Translation fr={"Plateforme de découverte dédiée aux génies tech africains. NURU met en lumière les talents, innovateurs et visionnaires qui façonnent la technologie africaine. 'L'Afrique regorge de génies.'"} en={"Discovery platform dedicated to African tech geniuses. NURU highlights the talents, innovators and visionaries shaping African technology. 'Africa is full of geniuses.'"} /></div>
               <div className="project-tags flex flex-wrap [gap:0.5rem]"><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">HTML</span><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">CSS</span><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]"><Translation fr={"JavaScript"} en={"JavaScript"} /></span><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">Vercel</span></div>
               <a className="project-link items-center inline-flex no-underline [font-family:var(--font-display)] [font-size:0.85rem] [font-weight:600]" href="https://nuru-ashy.vercel.app/" target="_blank"><Translation fr={"Voir le projet →"} en={"View project →"} /></a>
             </div>
@@ -416,10 +413,7 @@ function ImportedSectionProjets() {
             <div className="project-body">
               <div className="project-number uppercase [font-family:var(--font-mono)] [font-size:0.68rem] [letter-spacing:0.15em]">02 — 2025</div>
               <div className="project-title [font-family:var(--font-display)] [font-size:1.5rem] [font-weight:800]">Maëlle Beauty</div>
-              <div className="project-desc [font-size:0.88rem] [line-height:1.7]">
-                  Site vitrine e-commerce pour une marque de cosmétiques d'inspiration africaine. Interface élégante mettant
-                  en valeur des soins naturels formulés pour les peaux africaines.
-                </div>
+              <div className="project-desc [font-size:0.88rem] [line-height:1.7]"><Translation fr={"Site vitrine e-commerce pour une marque de cosmétiques d'inspiration africaine. Interface élégante mettant en valeur des soins naturels formulés pour les peaux métissées, mates et noires."} en={"E-commerce showcase website for an African-inspired cosmetics brand. Elegant interface showcasing natural skincare formulated for mixed, matte and dark skin tones."} /></div>
               <div className="project-tags flex flex-wrap [gap:0.5rem]"><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">React</span><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">Tailwind CSS</span><span className="project-tag rounded-[100px] [border:1px_solid_var(--border)] [font-family:var(--font-mono)] [font-size:0.7rem]">Lovable</span></div>
               <a className="project-link items-center inline-flex no-underline [font-family:var(--font-display)] [font-size:0.85rem] [font-weight:600]" href="https://maelle-beauty-glow.lovable.app/" target="_blank"><Translation fr={"Voir le projet →"} en={"View project →"} /></a>
             </div>
