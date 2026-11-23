@@ -1,6 +1,7 @@
 .olympus{--night:oklch(0.13 0.04 265);--deep:oklch(0.18 0.06 268);--gold:oklch(0.82 0.12 82);--gold2:oklch(0.9 0.09 90);--cyan:oklch(0.78 0.14 225);--ink:oklch(0.95 0.02 260);--dim:oklch(0.72 0.03 260);--line:oklch(0.82 0.12 82 / .22);
   position:relative;min-height:100vh;background:radial-gradient(ellipse at 70% -10%,oklch(0.3 0.12 270/.6),transparent 60%),radial-gradient(ellipse at 0% 100%,oklch(0.35 0.12 225/.35),transparent 55%),var(--night);color:var(--ink);font-family:"Cormorant Garamond",serif;font-size:19px;overflow-x:hidden}
 .olympus *{box-sizing:border-box}
+.olympus h1,.olympus h2,.olympus h3,.roman,.drop{font-variant-ligatures:none;font-feature-settings:"liga" 0,"dlig" 0}
 html{scroll-behavior:smooth}
 .starfield{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
 .mono{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
@@ -32,7 +33,7 @@ html{scroll-behavior:smooth}
 .intro-bottom{min-height:9rem;display:flex;align-items:center}
 .reveal-name{text-align:center}
 .reveal-name h1{font:900 clamp(2rem,6vw,4.8rem) "Cinzel Decorative",serif;margin:0 0 .6rem;letter-spacing:.06em;background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
-.reveal-name h1 span{display:inline-block;opacity:0;animation:letter .7s forwards}
+.reveal-name h1 span{display:inline-block;background:inherit;-webkit-background-clip:text;background-clip:text;opacity:0;animation:letter .7s forwards}
 .reveal-name .mono{display:block;margin-bottom:1.4rem;opacity:0;animation:up 1s 1s forwards}
 .reveal-name .cta{opacity:0;animation:up 1s 1.4s forwards}
 .intro.is-done .sky{animation:shrink 1.2s forwards}
